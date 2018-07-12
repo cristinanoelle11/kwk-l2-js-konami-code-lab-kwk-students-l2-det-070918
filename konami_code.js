@@ -14,14 +14,14 @@ const codes = [
 function init() {
   // your code here
 }
-  let sunny = 0
+  let idx = 0
 
   document.body.addEventListener("keydown", (e) => {
     const key = e.key
     
-    sunny = (codes[idx] === key) ? ++idx : 0
+    idx = (codes[index] === key) ? ++idx : 0
     
-    if (sunny === codes.length) {
+    if (index === codes.length) {
       window.alert("Hurray!");
       idx = 0
     }
